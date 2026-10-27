@@ -23,7 +23,7 @@ jobs:
 
   validate-code:
     runs-on: Ubuntu-latest
-    # needs: [validate-html,validate-js]
+    needs: [validate-html,validate-js]
     steps:
     - name: get-repo-code
       uses: actions/checkout@v4
